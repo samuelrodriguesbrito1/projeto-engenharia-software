@@ -1,0 +1,12 @@
+**
+!Dockerfile
+!Código Fonte/
+!Código Fonte/pom.xml
+!Código Fonte/src/
+!Código Fonte/src/**
+!Front-end/
+!Front-end/index.html
+!Front-end/scripts/
+!Front-end/scripts/**
+!Front-end/styles/
+!Front-end/styles/**
