@@ -8,18 +8,18 @@ export const cadastro = `
                 <label for="code">Código:</label>
                 <input class="campo-codigo" type="text" id="code" name="code" value="(gerado)" disabled>
 
-                <label for="cnpj">CNPJ:</label>
+                <label for="cnpj">CNPJ:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-cnpj" type="text" id="cnpj" name="cnpj" maxlength="18" required>
             </div>
             <div class="cadastro-linha">
-                <label for="company">Razão Social:</label>
+                <label for="company">Razão Social:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-razao" type="text" id="company" name="company" maxlength="100" required>
 
-                <label for="fantasyName">Nome Fantasia:</label>
+                <label for="fantasyName">Nome Fantasia:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-fantasia" type="text" id="fantasyName" name="fantasyName" maxlength="60" required>
             </div>
             <div class="cadastro-linha">
-                <label for="email">E-mail:</label>
+                <label for="email">E-mail:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-email" type="email" id="email" name="email" maxlength="100" required>
             </div>
             <div class="cadastro-linha" data-status hidden>
@@ -31,13 +31,13 @@ export const cadastro = `
         <fieldset>
             <legend>Telefone</legend>
             <div class="cadastro-linha">
-                <label for="phoneType">Tipo:</label>
+                <label for="phoneType">Tipo:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <select class="campo-tipo-telefone" id="phoneType" name="phoneType" required></select>
 
-                <label for="ddd">DDD:</label>
+                <label for="ddd">DDD:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-ddd" type="text" id="ddd" name="ddd" maxlength="2" inputmode="numeric" required>
 
-                <label for="phone">Número:</label>
+                <label for="phone">Número:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-telefone" type="text" id="phone" name="phone" maxlength="14" inputmode="tel" required>
             </div>
         </fieldset>
@@ -45,37 +45,39 @@ export const cadastro = `
         <fieldset>
             <legend>Endereço</legend>
             <div class="cadastro-linha">
-                <label for="streetType">Tipo Logradouro:</label>
+                <label for="streetType">Tipo Logradouro:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <select class="campo-tipo-logradouro" id="streetType" name="streetType" required></select>
 
-                <label for="street">Logradouro:</label>
+                <label for="street">Logradouro:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-logradouro" type="text" id="street" name="street" maxlength="100" required>
             </div>
             <div class="cadastro-linha">
-                <label for="number">Número:</label>
+                <label for="number">Número:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-numero" type="text" id="number" name="number" maxlength="10" required>
 
                 <label for="complement">Complemento:</label>
                 <input class="campo-complemento" type="text" id="complement" name="complement" maxlength="60">
 
-                <label for="neighborhood">Bairro:</label>
+                <label for="neighborhood">Bairro:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-bairro" type="text" id="neighborhood" name="neighborhood" maxlength="60" required>
             </div>
             <div class="cadastro-linha">
-                <label for="zipCode">CEP:</label>
+                <label for="zipCode">CEP:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-cep" type="text" id="zipCode" name="zipCode" maxlength="9" inputmode="numeric" required>
 
-                <label for="city">Cidade:</label>
+                <label for="city">Cidade:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <input class="campo-cidade" type="text" id="city" name="city" maxlength="60" required>
 
-                <label for="state">Estado:</label>
+                <label for="state">Estado:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <select class="campo-estado" id="state" name="state" required></select>
             </div>
             <div class="cadastro-linha">
-                <label for="country">País:</label>
+                <label for="country">País:<span class="obrigatorio" aria-hidden="true">*</span></label>
                 <select class="campo-pais" id="country" name="country" required></select>
             </div>
         </fieldset>
+
+        <p class="legenda-obrigatorio"><span class="obrigatorio" aria-hidden="true">*</span> Campos obrigatórios</p>
 
         <div class="cadastro-acoes">
             <button type="submit" disabled>Salvar</button>

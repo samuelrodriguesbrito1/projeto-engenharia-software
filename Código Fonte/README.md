@@ -1,12 +1,12 @@
 # Cadastro de fornecedores
 
-Projeto de faculdade baseado no diagrama de classes e nos cinco diagramas de sequência. A interface em HTML, CSS e JavaScript é servida pelo mesmo aplicativo Java que atende a API.
+Projeto de faculdade baseado no diagrama de classes, nos seis diagramas de sequência e no MER. A interface em HTML, CSS e JavaScript é servida pelo mesmo aplicativo Java que atende a API.
 
 ## Pastas do projeto
 
 - **Código Fonte** contém o backend Java, os scripts do PostgreSQL e os comandos do Maven.
 - **Front-end** fica ao lado de **Código Fonte** e contém a interface HTML, CSS e JavaScript.
-- **Diagramas Fornecedor** contém os diagramas.
+- **Diagramas Fornecedor** contém o diagrama de classes, os seis diagramas de sequência e o MER.
 
 Execute os comandos de compilação e execução dentro de **Código Fonte**. Mantenha **Front-end** no mesmo nível para que o Maven inclua a interface no JAR.
 

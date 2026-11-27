@@ -85,3 +85,21 @@ button:disabled {
 [hidden] {
     display: none !important;
 }
+
+/* Identificação visual dos campos obrigatórios (RN0081 e RN0082) */
+.obrigatorio {
+    color: #c00000;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.legenda-obrigatorio {
+    margin: 4px 0;
+    font-size: 0.9em;
+}
+
+/* Na visualização (A1) os campos ficam somente leitura e as marcas deixam de fazer sentido. */
+fieldset:disabled .obrigatorio,
+form:has(fieldset:disabled) .legenda-obrigatorio {
+    display: none;
+}

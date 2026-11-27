@@ -22,16 +22,17 @@ Comece o vídeo com o título **Pedido × realizado**, o nome da dupla e esta ta
 
 | Pedido | Status | O que falta e por quê |
 | --- | --- | --- |
-| Consulta, inclusão, visualização, alteração, inativação e ativação | Feito | — |
-| RN0081, RN0082 e RN0083 · Campos obrigatórios, endereço e CNPJ único | Feito | — |
-| RN0084 e RN0085 · Motivos de inativação e ativação | Feito | — |
+| Consulta, inclusão, visualização, alteração, inativação e ativação | Feito | Nada pendente. |
+| RN0081, RN0082 e RN0083 · Campos obrigatórios, endereço e CNPJ único | Feito | Nada pendente. Os campos obrigatórios aparecem marcados com `*` nas telas. |
+| RN0084 e RN0085 · Motivos de inativação e ativação | Feito | Nada pendente. |
 | RN0086 · Fornecedor ativo na entrada em estoque | Parcial | A visão lista só os ativos. Falta aplicar a regra na entrada em estoque, pois esse módulo está fora do projeto. |
 | RNF0011 · Consulta em até 1 segundo | Parcial | A medição foi local. Falta testar com volume e carga representativos. |
-| RNF0012, RNF0013 e RNF0081 · Log, domínios e código único | Feito | — |
-| E1, E2, E3 e E4 · Campos vazios, CNPJ repetido, busca vazia e motivo incompleto | Feito | — |
-| Facade, Command, Strategy, DAO, View Helper e Front Controller | Feito | — |
-| Diagrama de classes | Parcial | O detalhe da conexão precisa refletir o uso do `JdbcTemplate`. |
-| Diagramas de sequência | Parcial | O fluxo de escrita precisa mostrar que a confirmação ocorre depois do log. |
+| RNF0012, RNF0013 e RNF0081 · Log, domínios e código único | Feito | Nada pendente. |
+| E1, E2, E3 e E4 · Campos vazios, CNPJ repetido, busca vazia e motivo incompleto | Feito | Nada pendente. |
+| Facade, Command, Strategy, DAO, View Helper e Front Controller | Feito | Nada pendente. |
+| Diagrama de classes e MER | Feito | Nada pendente. O diagrama de classes mostra o `JdbcTemplate`, e o MER foi refeito conforme o `schema.sql`. |
+| Diagramas de sequência | Feito | Nada pendente. Nas escritas, o `commit()` da Fachada ocorre depois do log. |
+| Telas conforme os protótipos da seção 11 | Feito | Decisão da dupla: o botão **Mais filtros** na tela de resultado volta à busca completa, que o protótipo não mostrava como acessar. |
 
 **Diga:** “As seis operações estão implementadas. O slide mostra o que ficou parcial. Agora vamos demonstrar o cadastro.”
 
@@ -78,7 +79,7 @@ Abra `IStrategy.java` e aponte `regrasAntes` em `Fachada.java`.
 
 ## Consultas SQL para o passo 9
 
-Troque `F0002` pelo código real da Horizonte.
+Troque `F0002` pelo código real da Horizonte. No banco online a Aurora já é a `F0003`, então a Horizonte receberá `F0004` ou um código maior.
 
 ```sql
 SELECT f.codigo, f.nome_fantasia, f.status, t.ddd, t.numero AS telefone,
