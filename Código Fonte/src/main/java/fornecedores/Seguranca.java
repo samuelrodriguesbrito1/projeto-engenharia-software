@@ -16,7 +16,9 @@ import org.springframework.security.web.SecurityFilterChain;
 class Seguranca {
     @Bean
     SecurityFilterChain acesso(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(regras -> regras.anyRequest().hasRole("ADMINISTRADOR"))
+        return http.authorizeHttpRequests(regras -> regras
+                        .requestMatchers("/styles/**", "/scripts/**").permitAll()
+                        .anyRequest().hasRole("ADMINISTRADOR"))
                 .formLogin(login -> login.permitAll().defaultSuccessUrl("/", true))
                 .build();
     }
