@@ -788,9 +788,9 @@
 <polygon fill="none" stroke="black" points="2376,-412 2376,-434 2532,-434 2532,-412 2376,-412"/>
 <text text-anchor="start" x="2406" y="-421.2" font-family="Arial" font-weight="bold" font-style="italic" font-size="11.00">AbstractJdbcDAO</text>
 <polygon fill="none" stroke="black" points="2376,-390 2376,-412 2532,-412 2532,-390 2376,-390"/>
-<text text-anchor="start" x="2381" y="-398.2" font-family="Arial" font-size="11.00"> </text>
+<text text-anchor="start" x="2381" y="-398.2" font-family="Arial" font-size="11.00"># jdbc : JdbcTemplate</text>
 <polygon fill="none" stroke="black" points="2376,-368 2376,-390 2532,-390 2532,-368 2376,-368"/>
-<text text-anchor="start" x="2381" y="-376.2" font-family="Arial" font-size="11.00"># abrirConexao() : Connection</text>
+<text text-anchor="start" x="2381" y="-376.2" font-family="Arial" font-size="11.00"> </text>
 <polygon fill="none" stroke="black" points="2375,-367 2375,-435 2533,-435 2533,-367 2375,-367"/>
 </g>
 <!-- AbstractJdbcDAO&#45;&gt;IDAO -->
@@ -808,7 +808,7 @@
 <polygon fill="none" stroke="black" points="2406,-572 2406,-594 2567,-594 2567,-572 2406,-572"/>
 <text text-anchor="start" x="2411" y="-580.2" font-family="Arial" font-size="11.00"> </text>
 <polygon fill="none" stroke="black" points="2406,-550 2406,-572 2567,-572 2567,-550 2406,-550"/>
-<text text-anchor="start" x="2411" y="-558.2" font-family="Arial" font-size="11.00">+ getConnection() : Connection</text>
+<text text-anchor="start" x="2411" y="-558.2" font-family="Arial" font-size="11.00">+ jdbc() : JdbcTemplate</text>
 <polygon fill="none" stroke="black" points="2404.5,-549 2404.5,-617 2567.5,-617 2567.5,-549 2404.5,-549"/>
 </g>
 <!-- AbstractJdbcDAO&#45;&gt;Conexao -->
