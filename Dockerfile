@@ -8,7 +8,7 @@ RUN mvn -B -f "Código Fonte/pom.xml" package
 FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY --from=build ["/projeto/Código Fonte/target/cadastro-fornecedores-*.jar", "/app/app.jar"]
-ENV SERVER_ADDRESS=0.0.0.0 SERVER_PORT=10000
+ENV SERVER_ADDRESS=0.0.0.0 SERVER_PORT=10000 SERVER_FORWARD_HEADERS_STRATEGY=framework
 EXPOSE 10000
 USER 10001
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
